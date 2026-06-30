@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Github') {
             steps {
-                echo 'Checking out code from GitHub...'
+                echo 'Pull code from GitHub...'
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHub-token', url: 'https://github.com/amaanrzv39/End-to-End-GitOps.git']])
 			    }
         }        
