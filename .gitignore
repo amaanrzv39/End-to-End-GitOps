@@ -1,0 +1,6 @@
+.venv/
+*.egg-info/
+logs/
+gcp-key.json
+__pycache__/
+.env
