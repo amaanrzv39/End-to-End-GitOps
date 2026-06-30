@@ -28,7 +28,7 @@ pipeline {
                         gcloud config set project ${GCP_PROJECT}
                         gcloud auth configure-docker --quiet
                         docker build -t gcr.io/${GCP_PROJECT}/smart-machines:latest .
-                        docker push gcr.io/${GCP_PROJECT}/smart-machines:latest .
+                        docker push gcr.io/${GCP_PROJECT}/smart-machines:latest
                         '''
                     }
                 }
